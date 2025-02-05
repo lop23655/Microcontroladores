@@ -1,0 +1,35 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.2.8</VERSION>
+ <DEVICE>"ATmega328P"</DEVICE>
+ <WORKING_DIR>c:\users\fabis\Documents\Atmel Studio\7.0\AssemblerApplication3\AssemblerApplication3\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc</DIR>
+  <DIR>C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avrassembler\Include</DIR>
+  <DIR></DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>c:\users\fabis\Documents\Atmel Studio\7.0\AssemblerApplication3\AssemblerApplication3\main.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc\m328Pdef.inc</FILE>
+  <FILE>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc\M328PDEF.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>c:\users\fabis\Documents\Atmel Studio\7.0\AssemblerApplication3\AssemblerApplication3\Debug\AssemblerApplication3.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>AssemblerApplication3.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>AssemblerApplication3.map</FILE>
+  <FILE>AssemblerApplication3.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <SETUP><FILE>c:\users\fabis\Documents\Atmel Studio\7.0\AssemblerApplication3\AssemblerApplication3\main.asm</FILE><LINE>21</LINE></SETUP>
+  <LOOP><FILE>c:\users\fabis\Documents\Atmel Studio\7.0\AssemblerApplication3\AssemblerApplication3\main.asm</FILE><LINE>39</LINE></LOOP>
+  <DELAY><FILE>c:\users\fabis\Documents\Atmel Studio\7.0\AssemblerApplication3\AssemblerApplication3\main.asm</FILE><LINE>54</LINE></DELAY>
+  <SUMA><FILE>c:\users\fabis\Documents\Atmel Studio\7.0\AssemblerApplication3\AssemblerApplication3\main.asm</FILE><LINE>76</LINE></SUMA>
+  <RESTA><FILE>c:\users\fabis\Documents\Atmel Studio\7.0\AssemblerApplication3\AssemblerApplication3\main.asm</FILE><LINE>82</LINE></RESTA>
+  <SUBDELAY1><FILE>c:\users\fabis\Documents\Atmel Studio\7.0\AssemblerApplication3\AssemblerApplication3\main.asm</FILE><LINE>57</LINE></SUBDELAY1>
+  <SUBDELAY2><FILE>c:\users\fabis\Documents\Atmel Studio\7.0\AssemblerApplication3\AssemblerApplication3\main.asm</FILE><LINE>63</LINE></SUBDELAY2>
+  <SUBDELAY3><FILE>c:\users\fabis\Documents\Atmel Studio\7.0\AssemblerApplication3\AssemblerApplication3\main.asm</FILE><LINE>69</LINE></SUBDELAY3>
+ </LABELS>
+</ASSEMBLER_INFO>
