@@ -1,0 +1,43 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.2.8</VERSION>
+ <DEVICE>"ATmega328P"</DEVICE>
+ <WORKING_DIR>C:\Users\fabis\Documents\Atmel Studio\7.0\LAB2\LAB2\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc</DIR>
+  <DIR>C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avrassembler\Include</DIR>
+  <DIR></DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\LAB2\LAB2\main.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc\m328Pdef.inc</FILE>
+  <FILE>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc\M328PDEF.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\LAB2\LAB2\Debug\LAB2.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>LAB2.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>LAB2.map</FILE>
+  <FILE>LAB2.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <SETUP><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\LAB2\LAB2\main.asm</FILE><LINE>26</LINE></SETUP>
+  <INIT_TMR0><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\LAB2\LAB2\main.asm</FILE><LINE>145</LINE></INIT_TMR0>
+  <MAIN_LOOP><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\LAB2\LAB2\main.asm</FILE><LINE>109</LINE></MAIN_LOOP>
+  <DISPLAY7><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\LAB2\LAB2\main.asm</FILE><LINE>131</LINE></DISPLAY7>
+  <TEMP><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\LAB2\LAB2\main.asm</FILE><LINE>208</LINE></TEMP>
+  <DELAY><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\LAB2\LAB2\main.asm</FILE><LINE>152</LINE></DELAY>
+  <SUMA><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\LAB2\LAB2\main.asm</FILE><LINE>173</LINE></SUMA>
+  <RESTA><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\LAB2\LAB2\main.asm</FILE><LINE>183</LINE></RESTA>
+  <SUBDELAY1><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\LAB2\LAB2\main.asm</FILE><LINE>155</LINE></SUBDELAY1>
+  <SUBDELAY2><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\LAB2\LAB2\main.asm</FILE><LINE>161</LINE></SUBDELAY2>
+  <SUBDELAY3><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\LAB2\LAB2\main.asm</FILE><LINE>167</LINE></SUBDELAY3>
+  <OVERFLOW><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\LAB2\LAB2\main.asm</FILE><LINE>192</LINE></OVERFLOW>
+  <UNDERFLOW><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\LAB2\LAB2\main.asm</FILE><LINE>200</LINE></UNDERFLOW>
+  <REST><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\LAB2\LAB2\main.asm</FILE><LINE>216</LINE></REST>
+  <AUMENTO><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\LAB2\LAB2\main.asm</FILE><LINE>227</LINE></AUMENTO>
+  <LIMP><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\LAB2\LAB2\main.asm</FILE><LINE>223</LINE></LIMP>
+ </LABELS>
+</ASSEMBLER_INFO>
