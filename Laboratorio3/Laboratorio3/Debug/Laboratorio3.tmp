@@ -1,0 +1,37 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.2.8</VERSION>
+ <DEVICE>"ATmega328P"</DEVICE>
+ <WORKING_DIR>C:\Users\fabis\Documents\Atmel Studio\7.0\Laboratorio3\Laboratorio3\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc</DIR>
+  <DIR>C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avrassembler\Include</DIR>
+  <DIR></DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\Laboratorio3\Laboratorio3\main.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc\m328Pdef.inc</FILE>
+  <FILE>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc\M328PDEF.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\Laboratorio3\Laboratorio3\Debug\Laboratorio3.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>Laboratorio3.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>Laboratorio3.map</FILE>
+  <FILE>Laboratorio3.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <START><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\Laboratorio3\Laboratorio3\main.asm</FILE><LINE>25</LINE></START>
+  <BOTON><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\Laboratorio3\Laboratorio3\main.asm</FILE><LINE>141</LINE></BOTON>
+  <RUTINA_DE_TIMER0_OV><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\Laboratorio3\Laboratorio3\main.asm</FILE><LINE>135</LINE></RUTINA_DE_TIMER0_OV>
+  <SETUP><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\Laboratorio3\Laboratorio3\main.asm</FILE><LINE>34</LINE></SETUP>
+  <NUM7><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\Laboratorio3\Laboratorio3\main.asm</FILE><LINE>84</LINE></NUM7>
+  <MAIN_LOOP><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\Laboratorio3\Laboratorio3\main.asm</FILE><LINE>90</LINE></MAIN_LOOP>
+  <DELAY><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\Laboratorio3\Laboratorio3\main.asm</FILE><LINE>158</LINE></DELAY>
+  <OVERFLOW><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\Laboratorio3\Laboratorio3\main.asm</FILE><LINE>126</LINE></OVERFLOW>
+  <RESTAR><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\Laboratorio3\Laboratorio3\main.asm</FILE><LINE>152</LINE></RESTAR>
+  <SUBDELAY1><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\Laboratorio3\Laboratorio3\main.asm</FILE><LINE>160</LINE></SUBDELAY1>
+ </LABELS>
+</ASSEMBLER_INFO>
