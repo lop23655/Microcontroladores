@@ -1,0 +1,147 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.2.8</VERSION>
+ <DEVICE>"ATmega328P"</DEVICE>
+ <WORKING_DIR>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc</DIR>
+  <DIR>C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avrassembler\Include</DIR>
+  <DIR></DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc\m328Pdef.inc</FILE>
+  <FILE>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc\M328PDEF.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\Debug\ProyectoReloj2.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>ProyectoReloj2.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>ProyectoReloj2.map</FILE>
+  <FILE>ProyectoReloj2.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <USEC><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>39</LINE></USEC>
+  <DSEC><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>40</LINE></DSEC>
+  <UHR><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>42</LINE></UHR>
+  <DHR><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>43</LINE></DHR>
+  <UDIA><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>45</LINE></UDIA>
+  <DDIA><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>46</LINE></DDIA>
+  <UMES><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>48</LINE></UMES>
+  <DMES><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>49</LINE></DMES>
+  <PMES><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>50</LINE></PMES>
+  <USECA><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>52</LINE></USECA>
+  <DSECA><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>53</LINE></DSECA>
+  <UHRA><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>54</LINE></UHRA>
+  <DHRA><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>55</LINE></DHRA>
+  <START><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>72</LINE></START>
+  <PCINT_ISR><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>938</LINE></PCINT_ISR>
+  <RUTINA_DE_TIMER0_OV><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>1066</LINE></RUTINA_DE_TIMER0_OV>
+  <NUM7><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>68</LINE></NUM7>
+  <LIMTMES><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>69</LINE></LIMTMES>
+  <SETUP><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>81</LINE></SETUP>
+  <MAIN_LOOP><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>166</LINE></MAIN_LOOP>
+  <REVISAR_ALARMA><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>732</LINE></REVISAR_ALARMA>
+  <RELOJ><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>190</LINE></RELOJ>
+  <FECHA><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>216</LINE></FECHA>
+  <GO_CONFIG_RELOJ><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>180</LINE></GO_CONFIG_RELOJ>
+  <GO_CONFIG_FECHA><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>183</LINE></GO_CONFIG_FECHA>
+  <GO_CONFIG_ALARMA><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>186</LINE></GO_CONFIG_ALARMA>
+  <CONFIG_RELOJ><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>232</LINE></CONFIG_RELOJ>
+  <CONFIG_FECHA><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>386</LINE></CONFIG_FECHA>
+  <CONFIG_ALARMA><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>583</LINE></CONFIG_ALARMA>
+  <SHOW_USEC><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>763</LINE></SHOW_USEC>
+  <SHOW_DSEC><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>806</LINE></SHOW_DSEC>
+  <SHOW_UHR><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>892</LINE></SHOW_UHR>
+  <SHOW_DHR><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>849</LINE></SHOW_DHR>
+  <CAMBIAR_LED><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>205</LINE></CAMBIAR_LED>
+  <SALIDA><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>728</LINE></SALIDA>
+  <APAGAR_LED><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>210</LINE></APAGAR_LED>
+  <FIN_CAMBIO><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>213</LINE></FIN_CAMBIO>
+  <DELAY><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>755</LINE></DELAY>
+  <EXIT_CRELOJ><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>250</LINE></EXIT_CRELOJ>
+  <INC_CRELOJ><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>273</LINE></INC_CRELOJ>
+  <GO_DEC_CRELOJ><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>247</LINE></GO_DEC_CRELOJ>
+  <DEC_CRELOJ><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>336</LINE></DEC_CRELOJ>
+  <SHOW_LEFT><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>257</LINE></SHOW_LEFT>
+  <SHOW_RIGHT><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>265</LINE></SHOW_RIGHT>
+  <INC_LEFT><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>280</LINE></INC_LEFT>
+  <INC_RIGHT><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>311</LINE></INC_RIGHT>
+  <GUARDAR_UHR><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>303</LINE></GUARDAR_UHR>
+  <GUARDAR_DHR><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>307</LINE></GUARDAR_DHR>
+  <GUARDAR_USEC><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>328</LINE></GUARDAR_USEC>
+  <GUARDAR_DSEC><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>332</LINE></GUARDAR_DSEC>
+  <DEC_LEFT><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>343</LINE></DEC_LEFT>
+  <DEC_RIGHT><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>369</LINE></DEC_RIGHT>
+  <GO_EXIT_CRELOJ><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>400</LINE></GO_EXIT_CRELOJ>
+  <INC_CFECHA><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>403</LINE></INC_CFECHA>
+  <GO_DEC_CFECHA><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>397</LINE></GO_DEC_CFECHA>
+  <DEC_CFECHA><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>482</LINE></DEC_CFECHA>
+  <INC_LEFT_F><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>410</LINE></INC_LEFT_F>
+  <INC_RIGHT_F><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>449</LINE></INC_RIGHT_F>
+  <GUARDAR_UDIA><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>441</LINE></GUARDAR_UDIA>
+  <GUARDAR_DDIA><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>445</LINE></GUARDAR_DDIA>
+  <GUARDAR_UMES><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>474</LINE></GUARDAR_UMES>
+  <GUARDAR_DMES><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>478</LINE></GUARDAR_DMES>
+  <DEC_LEFT_F><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>489</LINE></DEC_LEFT_F>
+  <DEC_RIGHT_F><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>550</LINE></DEC_RIGHT_F>
+  <GO_GUARDAR_UDIA><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>544</LINE></GO_GUARDAR_UDIA>
+  <GO_GUARDAR_DDIA><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>547</LINE></GO_GUARDAR_DDIA>
+  <FEBRERO><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>523</LINE></FEBRERO>
+  <MES_PAR><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>530</LINE></MES_PAR>
+  <MES_IMPAR><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>537</LINE></MES_IMPAR>
+  <GO_GUARDAR_UMES><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>576</LINE></GO_GUARDAR_UMES>
+  <GO_GUARDAR_DMES><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>579</LINE></GO_GUARDAR_DMES>
+  <EXIT_ALARMA><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>602</LINE></EXIT_ALARMA>
+  <INC_ALARMA><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>615</LINE></INC_ALARMA>
+  <GO_DEC_ALARMA><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>599</LINE></GO_DEC_ALARMA>
+  <DEC_ALARMA><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>678</LINE></DEC_ALARMA>
+  <GO2_SHOW_LEFT><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>609</LINE></GO2_SHOW_LEFT>
+  <GO2_SHOW_RIGHT><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>612</LINE></GO2_SHOW_RIGHT>
+  <INC_LEFT_ALARMA><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>622</LINE></INC_LEFT_ALARMA>
+  <INC_RIGHT_ALARMA><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>653</LINE></INC_RIGHT_ALARMA>
+  <GUARDAR_UHRA><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>645</LINE></GUARDAR_UHRA>
+  <GUARDAR_DHRA><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>649</LINE></GUARDAR_DHRA>
+  <GUARDAR_USECA><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>670</LINE></GUARDAR_USECA>
+  <GUARDAR_DSECA><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>674</LINE></GUARDAR_DSECA>
+  <DEC_LEFT_ALARMA><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>685</LINE></DEC_LEFT_ALARMA>
+  <DEC_RIGHT_ALARMA><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>711</LINE></DEC_RIGHT_ALARMA>
+  <REGRESAR><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>752</LINE></REGRESAR>
+  <SUBDELAY1><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>757</LINE></SUBDELAY1>
+  <SHOW_UDIA><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>784</LINE></SHOW_UDIA>
+  <SHOW_USECA><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>795</LINE></SHOW_USECA>
+  <SHOW_DDIA><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>827</LINE></SHOW_DDIA>
+  <SHOW_DSECA><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>838</LINE></SHOW_DSECA>
+  <SHOW_DMES><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>870</LINE></SHOW_DMES>
+  <SHOW_DHRA><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>881</LINE></SHOW_DHRA>
+  <SHOW_UMES><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>913</LINE></SHOW_UMES>
+  <SHOW_UHRA><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>924</LINE></SHOW_UHRA>
+  <APAGAR_ALARMA><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>1030</LINE></APAGAR_ALARMA>
+  <MODE0_ISR><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>977</LINE></MODE0_ISR>
+  <MODE1_ISR><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>980</LINE></MODE1_ISR>
+  <MODE2_ISR><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>983</LINE></MODE2_ISR>
+  <MODE3_ISR><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>994</LINE></MODE3_ISR>
+  <MODE4_ISR><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>1005</LINE></MODE4_ISR>
+  <EXIT_PCINT_ISR><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>1024</LINE></EXIT_PCINT_ISR>
+  <LEFT><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>1016</LINE></LEFT>
+  <RIGHT><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>1020</LINE></RIGHT>
+  <ALARMA_SIL><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>1037</LINE></ALARMA_SIL>
+  <GUARDAR_USECAR><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>1046</LINE></GUARDAR_USECAR>
+  <GO_EXIT><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>1051</LINE></GO_EXIT>
+  <EXIT_TIMER0><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>1210</LINE></EXIT_TIMER0>
+  <GO_STORE_USEC><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>1054</LINE></GO_STORE_USEC>
+  <STORE_USEC><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>1178</LINE></STORE_USEC>
+  <GO_STORE_DSEC><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>1057</LINE></GO_STORE_DSEC>
+  <STORE_DSEC><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>1182</LINE></STORE_DSEC>
+  <GO_STORE_UHR><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>1060</LINE></GO_STORE_UHR>
+  <STORE_UHR><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>1186</LINE></STORE_UHR>
+  <GO_STORE_DHR><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>1063</LINE></GO_STORE_DHR>
+  <STORE_DHR><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>1190</LINE></STORE_DHR>
+  <STORE_UDIA><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>1194</LINE></STORE_UDIA>
+  <STORE_DDIA><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>1198</LINE></STORE_DDIA>
+  <STORE_UMES><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>1202</LINE></STORE_UMES>
+  <STORE_DMES><FILE>C:\Users\fabis\Documents\Atmel Studio\7.0\ProyectoReloj2\ProyectoReloj2\main.asm</FILE><LINE>1206</LINE></STORE_DMES>
+ </LABELS>
+</ASSEMBLER_INFO>
