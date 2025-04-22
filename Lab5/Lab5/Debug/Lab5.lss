@@ -1,0 +1,588 @@
+
+Lab5.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000002  00800100  0000034c  000003e0  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         0000034c  00000000  00000000  00000094  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .bss          00000003  00800102  00800102  000003e2  2**0
+                  ALLOC
+  3 .comment      00000030  00000000  00000000  000003e2  2**0
+                  CONTENTS, READONLY
+  4 .note.gnu.avr.deviceinfo 00000040  00000000  00000000  00000414  2**2
+                  CONTENTS, READONLY
+  5 .debug_aranges 000000b0  00000000  00000000  00000454  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_info   00000a40  00000000  00000000  00000504  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_abbrev 00000832  00000000  00000000  00000f44  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_line   0000063b  00000000  00000000  00001776  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_frame  0000014c  00000000  00000000  00001db4  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_str    00000478  00000000  00000000  00001f00  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_loc    0000015a  00000000  00000000  00002378  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_ranges 00000070  00000000  00000000  000024d2  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	0c 94 34 00 	jmp	0x68	; 0x68 <__ctors_end>
+   4:	0c 94 51 00 	jmp	0xa2	; 0xa2 <__bad_interrupt>
+   8:	0c 94 51 00 	jmp	0xa2	; 0xa2 <__bad_interrupt>
+   c:	0c 94 51 00 	jmp	0xa2	; 0xa2 <__bad_interrupt>
+  10:	0c 94 51 00 	jmp	0xa2	; 0xa2 <__bad_interrupt>
+  14:	0c 94 51 00 	jmp	0xa2	; 0xa2 <__bad_interrupt>
+  18:	0c 94 51 00 	jmp	0xa2	; 0xa2 <__bad_interrupt>
+  1c:	0c 94 51 00 	jmp	0xa2	; 0xa2 <__bad_interrupt>
+  20:	0c 94 51 00 	jmp	0xa2	; 0xa2 <__bad_interrupt>
+  24:	0c 94 51 00 	jmp	0xa2	; 0xa2 <__bad_interrupt>
+  28:	0c 94 51 00 	jmp	0xa2	; 0xa2 <__bad_interrupt>
+  2c:	0c 94 51 00 	jmp	0xa2	; 0xa2 <__bad_interrupt>
+  30:	0c 94 51 00 	jmp	0xa2	; 0xa2 <__bad_interrupt>
+  34:	0c 94 51 00 	jmp	0xa2	; 0xa2 <__bad_interrupt>
+  38:	0c 94 51 00 	jmp	0xa2	; 0xa2 <__bad_interrupt>
+  3c:	0c 94 51 00 	jmp	0xa2	; 0xa2 <__bad_interrupt>
+  40:	0c 94 39 01 	jmp	0x272	; 0x272 <__vector_16>
+  44:	0c 94 51 00 	jmp	0xa2	; 0xa2 <__bad_interrupt>
+  48:	0c 94 51 00 	jmp	0xa2	; 0xa2 <__bad_interrupt>
+  4c:	0c 94 51 00 	jmp	0xa2	; 0xa2 <__bad_interrupt>
+  50:	0c 94 51 00 	jmp	0xa2	; 0xa2 <__bad_interrupt>
+  54:	0c 94 9e 00 	jmp	0x13c	; 0x13c <__vector_21>
+  58:	0c 94 51 00 	jmp	0xa2	; 0xa2 <__bad_interrupt>
+  5c:	0c 94 51 00 	jmp	0xa2	; 0xa2 <__bad_interrupt>
+  60:	0c 94 51 00 	jmp	0xa2	; 0xa2 <__bad_interrupt>
+  64:	0c 94 51 00 	jmp	0xa2	; 0xa2 <__bad_interrupt>
+
+00000068 <__ctors_end>:
+  68:	11 24       	eor	r1, r1
+  6a:	1f be       	out	0x3f, r1	; 63
+  6c:	cf ef       	ldi	r28, 0xFF	; 255
+  6e:	d8 e0       	ldi	r29, 0x08	; 8
+  70:	de bf       	out	0x3e, r29	; 62
+  72:	cd bf       	out	0x3d, r28	; 61
+
+00000074 <__do_copy_data>:
+  74:	11 e0       	ldi	r17, 0x01	; 1
+  76:	a0 e0       	ldi	r26, 0x00	; 0
+  78:	b1 e0       	ldi	r27, 0x01	; 1
+  7a:	ec e4       	ldi	r30, 0x4C	; 76
+  7c:	f3 e0       	ldi	r31, 0x03	; 3
+  7e:	02 c0       	rjmp	.+4      	; 0x84 <__do_copy_data+0x10>
+  80:	05 90       	lpm	r0, Z+
+  82:	0d 92       	st	X+, r0
+  84:	a2 30       	cpi	r26, 0x02	; 2
+  86:	b1 07       	cpc	r27, r17
+  88:	d9 f7       	brne	.-10     	; 0x80 <__do_copy_data+0xc>
+
+0000008a <__do_clear_bss>:
+  8a:	21 e0       	ldi	r18, 0x01	; 1
+  8c:	a2 e0       	ldi	r26, 0x02	; 2
+  8e:	b1 e0       	ldi	r27, 0x01	; 1
+  90:	01 c0       	rjmp	.+2      	; 0x94 <.do_clear_bss_start>
+
+00000092 <.do_clear_bss_loop>:
+  92:	1d 92       	st	X+, r1
+
+00000094 <.do_clear_bss_start>:
+  94:	a5 30       	cpi	r26, 0x05	; 5
+  96:	b2 07       	cpc	r27, r18
+  98:	e1 f7       	brne	.-8      	; 0x92 <.do_clear_bss_loop>
+  9a:	0e 94 9b 00 	call	0x136	; 0x136 <main>
+  9e:	0c 94 a4 01 	jmp	0x348	; 0x348 <_exit>
+
+000000a2 <__bad_interrupt>:
+  a2:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+
+000000a6 <initServoTimer1>:
+#include "LAB5.h"
+
+void initServoTimer1()
+{
+	// PB1 (OC1A) como salida
+	DDRB |= (1 << DDB1);
+  a6:	84 b1       	in	r24, 0x04	; 4
+  a8:	82 60       	ori	r24, 0x02	; 2
+  aa:	84 b9       	out	0x04, r24	; 4
+
+	// Modo 14: Fast PWM con ICR1 como TOP
+	TCCR1A = (1 << WGM11); // WGM11 = 1
+  ac:	a0 e8       	ldi	r26, 0x80	; 128
+  ae:	b0 e0       	ldi	r27, 0x00	; 0
+  b0:	82 e0       	ldi	r24, 0x02	; 2
+  b2:	8c 93       	st	X, r24
+	TCCR1B = (1 << WGM13) | (1 << WGM12); // WGM13 y WGM12 = 1
+  b4:	e1 e8       	ldi	r30, 0x81	; 129
+  b6:	f0 e0       	ldi	r31, 0x00	; 0
+  b8:	88 e1       	ldi	r24, 0x18	; 24
+  ba:	80 83       	st	Z, r24
+
+	// No invertido en OC1A: COM1A1 = 1, COM1A0 = 0
+	TCCR1A |= (1 << COM1A1) ;
+  bc:	8c 91       	ld	r24, X
+  be:	80 68       	ori	r24, 0x80	; 128
+  c0:	8c 93       	st	X, r24
+
+	// Establecer TOP en ICR1 para 20 ms (50 Hz)
+	// f = 16 MHz / 8 = 2 MHz, 20 ms = 40000 ticks
+	ICR1 = 39999;
+  c2:	8f e3       	ldi	r24, 0x3F	; 63
+  c4:	9c e9       	ldi	r25, 0x9C	; 156
+  c6:	90 93 87 00 	sts	0x0087, r25	; 0x800087 <__TEXT_REGION_LENGTH__+0x7f8087>
+  ca:	80 93 86 00 	sts	0x0086, r24	; 0x800086 <__TEXT_REGION_LENGTH__+0x7f8086>
+
+	// Prescaler = 8
+	TCCR1B |= (1 << CS11);
+  ce:	80 81       	ld	r24, Z
+  d0:	82 60       	ori	r24, 0x02	; 2
+  d2:	80 83       	st	Z, r24
+  d4:	08 95       	ret
+
+000000d6 <updateServoPulse>:
+}
+
+void updateServoPulse(uint16_t pulso)
+{
+	// pulse_width entre 1000 (1ms) y 2000 (2ms)
+	OCR1A = pulso;
+  d6:	90 93 89 00 	sts	0x0089, r25	; 0x800089 <__TEXT_REGION_LENGTH__+0x7f8089>
+  da:	80 93 88 00 	sts	0x0088, r24	; 0x800088 <__TEXT_REGION_LENGTH__+0x7f8088>
+  de:	08 95       	ret
+
+000000e0 <initADC>:
+	sei();
+}
+
+void initADC()
+{
+	ADMUX = 0;
+  e0:	ec e7       	ldi	r30, 0x7C	; 124
+  e2:	f0 e0       	ldi	r31, 0x00	; 0
+  e4:	10 82       	st	Z, r1
+	ADMUX = (1<<REFS0)|(1<<ADLAR)|0x00;       // Selecciona ADC0 (PC0)
+  e6:	80 e6       	ldi	r24, 0x60	; 96
+  e8:	80 83       	st	Z, r24
+	
+	ADCSRA = 0;
+  ea:	ea e7       	ldi	r30, 0x7A	; 122
+  ec:	f0 e0       	ldi	r31, 0x00	; 0
+  ee:	10 82       	st	Z, r1
+	ADCSRA |= (1 << ADPS1) | (1 << ADPS0); // Prescaler = 8
+  f0:	80 81       	ld	r24, Z
+  f2:	83 60       	ori	r24, 0x03	; 3
+  f4:	80 83       	st	Z, r24
+	ADCSRA |= (1 << ADATE);                // Auto trigger (Free Running)
+  f6:	80 81       	ld	r24, Z
+  f8:	80 62       	ori	r24, 0x20	; 32
+  fa:	80 83       	st	Z, r24
+	ADCSRA |= (1 << ADEN) | (1 << ADIE);   // Habilita ADC + interrupción
+  fc:	80 81       	ld	r24, Z
+  fe:	88 68       	ori	r24, 0x88	; 136
+ 100:	80 83       	st	Z, r24
+
+	//ADCSRB &= ~((1 << ADTS2) | (1 << ADTS1) | (1 << ADTS0)); // Free running mode
+
+	ADCSRA |= (1 << ADSC); // Inicia la conversión
+ 102:	80 81       	ld	r24, Z
+ 104:	80 64       	ori	r24, 0x40	; 64
+ 106:	80 83       	st	Z, r24
+	canal_actual = 0;
+ 108:	10 92 04 01 	sts	0x0104, r1	; 0x800104 <canal_actual>
+ 10c:	08 95       	ret
+
+0000010e <setup>:
+
+/****************************************/
+// NON-Interrupt subroutines
+void setup()
+{
+	cli();
+ 10e:	f8 94       	cli
+	//CLKPR = (1 << CLKPCE);
+	//CLKPR = (1 << CLKPS2); // 1 MHz frecuencia principal
+	//initPWMFastA(non_invert, 1024);
+	//initPWMFastB(invert, 1024);
+	initADC();
+ 110:	0e 94 70 00 	call	0xe0	; 0xe0 <initADC>
+	initServoTimer1();
+ 114:	0e 94 53 00 	call	0xa6	; 0xa6 <initServoTimer1>
+	initServoTimer12();
+ 118:	0e 94 65 01 	call	0x2ca	; 0x2ca <initServoTimer12>
+	initTimer0();
+ 11c:	0e 94 57 01 	call	0x2ae	; 0x2ae <initTimer0>
+	DDRC &= ~(1 << DDC2);
+ 120:	87 b1       	in	r24, 0x07	; 7
+ 122:	8b 7f       	andi	r24, 0xFB	; 251
+ 124:	87 b9       	out	0x07, r24	; 7
+	DDRC &= ~(1 << DDC0);
+ 126:	87 b1       	in	r24, 0x07	; 7
+ 128:	8e 7f       	andi	r24, 0xFE	; 254
+ 12a:	87 b9       	out	0x07, r24	; 7
+	DDRC &= ~(1 << DDC1);
+ 12c:	87 b1       	in	r24, 0x07	; 7
+ 12e:	8d 7f       	andi	r24, 0xFD	; 253
+ 130:	87 b9       	out	0x07, r24	; 7
+	sei();
+ 132:	78 94       	sei
+ 134:	08 95       	ret
+
+00000136 <main>:
+uint8_t limitante = 0;
+/****************************************/
+// Main Function
+int main(void)
+{
+	setup();
+ 136:	0e 94 87 00 	call	0x10e	; 0x10e <setup>
+ 13a:	ff cf       	rjmp	.-2      	; 0x13a <main+0x4>
+
+0000013c <__vector_21>:
+
+/****************************************/
+// Interrupt routines
+
+ISR(ADC_vect)
+{
+ 13c:	1f 92       	push	r1
+ 13e:	0f 92       	push	r0
+ 140:	0f b6       	in	r0, 0x3f	; 63
+ 142:	0f 92       	push	r0
+ 144:	11 24       	eor	r1, r1
+ 146:	2f 93       	push	r18
+ 148:	3f 93       	push	r19
+ 14a:	4f 93       	push	r20
+ 14c:	5f 93       	push	r21
+ 14e:	6f 93       	push	r22
+ 150:	7f 93       	push	r23
+ 152:	8f 93       	push	r24
+ 154:	9f 93       	push	r25
+ 156:	af 93       	push	r26
+ 158:	bf 93       	push	r27
+ 15a:	ef 93       	push	r30
+ 15c:	ff 93       	push	r31
+
+		if (canal_actual == 0)
+ 15e:	80 91 04 01 	lds	r24, 0x0104	; 0x800104 <canal_actual>
+ 162:	81 11       	cpse	r24, r1
+ 164:	28 c0       	rjmp	.+80     	; 0x1b6 <__vector_21+0x7a>
+		{
+			ADMUX = 0;
+ 166:	ec e7       	ldi	r30, 0x7C	; 124
+ 168:	f0 e0       	ldi	r31, 0x00	; 0
+ 16a:	10 82       	st	Z, r1
+			ADMUX |= (1 << REFS0);     // Referencia = AVCC
+ 16c:	80 81       	ld	r24, Z
+ 16e:	80 64       	ori	r24, 0x40	; 64
+ 170:	80 83       	st	Z, r24
+			ADMUX |= (1 << ADLAR);     // Ajuste a la izquierda (usamos ADCH)
+ 172:	80 81       	ld	r24, Z
+ 174:	80 62       	ori	r24, 0x20	; 32
+ 176:	80 83       	st	Z, r24
+			ADMUX = (ADMUX & 0xF0) | 0x00; // ADC0
+ 178:	80 81       	ld	r24, Z
+ 17a:	80 7f       	andi	r24, 0xF0	; 240
+ 17c:	80 83       	st	Z, r24
+			canal_actual++;
+ 17e:	80 91 04 01 	lds	r24, 0x0104	; 0x800104 <canal_actual>
+ 182:	8f 5f       	subi	r24, 0xFF	; 255
+ 184:	80 93 04 01 	sts	0x0104, r24	; 0x800104 <canal_actual>
+			servo_position = ((uint32_t)ADCH * 3850) / 255 + 1200;
+ 188:	20 91 79 00 	lds	r18, 0x0079	; 0x800079 <__TEXT_REGION_LENGTH__+0x7f8079>
+ 18c:	30 e0       	ldi	r19, 0x00	; 0
+ 18e:	aa e0       	ldi	r26, 0x0A	; 10
+ 190:	bf e0       	ldi	r27, 0x0F	; 15
+ 192:	0e 94 95 01 	call	0x32a	; 0x32a <__umulhisi3>
+ 196:	2f ef       	ldi	r18, 0xFF	; 255
+ 198:	30 e0       	ldi	r19, 0x00	; 0
+ 19a:	40 e0       	ldi	r20, 0x00	; 0
+ 19c:	50 e0       	ldi	r21, 0x00	; 0
+ 19e:	0e 94 73 01 	call	0x2e6	; 0x2e6 <__udivmodsi4>
+ 1a2:	c9 01       	movw	r24, r18
+ 1a4:	80 55       	subi	r24, 0x50	; 80
+ 1a6:	9b 4f       	sbci	r25, 0xFB	; 251
+ 1a8:	90 93 01 01 	sts	0x0101, r25	; 0x800101 <__DATA_REGION_ORIGIN__+0x1>
+ 1ac:	80 93 00 01 	sts	0x0100, r24	; 0x800100 <__DATA_REGION_ORIGIN__>
+			updateServoPulse(servo_position);
+ 1b0:	0e 94 6b 00 	call	0xd6	; 0xd6 <updateServoPulse>
+ 1b4:	48 c0       	rjmp	.+144    	; 0x246 <__vector_21+0x10a>
+			//_delay_us(20); // Tiempo para que el servo reaccione
+		}
+		else if (canal_actual == 1)
+ 1b6:	80 91 04 01 	lds	r24, 0x0104	; 0x800104 <canal_actual>
+ 1ba:	81 30       	cpi	r24, 0x01	; 1
+ 1bc:	49 f5       	brne	.+82     	; 0x210 <__vector_21+0xd4>
+		 {
+			ADMUX = 0;
+ 1be:	ec e7       	ldi	r30, 0x7C	; 124
+ 1c0:	f0 e0       	ldi	r31, 0x00	; 0
+ 1c2:	10 82       	st	Z, r1
+			ADMUX |= (1 << REFS0);     // Referencia = AVCC
+ 1c4:	80 81       	ld	r24, Z
+ 1c6:	80 64       	ori	r24, 0x40	; 64
+ 1c8:	80 83       	st	Z, r24
+			ADMUX |= (1 << ADLAR);     // Ajuste a la izquierda (usamos ADCH)
+ 1ca:	80 81       	ld	r24, Z
+ 1cc:	80 62       	ori	r24, 0x20	; 32
+ 1ce:	80 83       	st	Z, r24
+			ADMUX = (ADMUX & 0xF0) | 0x01; // ADC1
+ 1d0:	80 81       	ld	r24, Z
+ 1d2:	80 7f       	andi	r24, 0xF0	; 240
+ 1d4:	81 60       	ori	r24, 0x01	; 1
+ 1d6:	80 83       	st	Z, r24
+			canal_actual++;
+ 1d8:	80 91 04 01 	lds	r24, 0x0104	; 0x800104 <canal_actual>
+ 1dc:	8f 5f       	subi	r24, 0xFF	; 255
+ 1de:	80 93 04 01 	sts	0x0104, r24	; 0x800104 <canal_actual>
+			servo_position = ((uint32_t)ADCH * 3850) / 255 + 1200;
+ 1e2:	20 91 79 00 	lds	r18, 0x0079	; 0x800079 <__TEXT_REGION_LENGTH__+0x7f8079>
+ 1e6:	30 e0       	ldi	r19, 0x00	; 0
+ 1e8:	aa e0       	ldi	r26, 0x0A	; 10
+ 1ea:	bf e0       	ldi	r27, 0x0F	; 15
+ 1ec:	0e 94 95 01 	call	0x32a	; 0x32a <__umulhisi3>
+ 1f0:	2f ef       	ldi	r18, 0xFF	; 255
+ 1f2:	30 e0       	ldi	r19, 0x00	; 0
+ 1f4:	40 e0       	ldi	r20, 0x00	; 0
+ 1f6:	50 e0       	ldi	r21, 0x00	; 0
+ 1f8:	0e 94 73 01 	call	0x2e6	; 0x2e6 <__udivmodsi4>
+ 1fc:	c9 01       	movw	r24, r18
+ 1fe:	80 55       	subi	r24, 0x50	; 80
+ 200:	9b 4f       	sbci	r25, 0xFB	; 251
+ 202:	90 93 01 01 	sts	0x0101, r25	; 0x800101 <__DATA_REGION_ORIGIN__+0x1>
+ 206:	80 93 00 01 	sts	0x0100, r24	; 0x800100 <__DATA_REGION_ORIGIN__>
+			updateServoPulse2(servo_position);
+ 20a:	0e 94 6e 01 	call	0x2dc	; 0x2dc <updateServoPulse2>
+ 20e:	1b c0       	rjmp	.+54     	; 0x246 <__vector_21+0x10a>
+		}
+		else if (canal_actual == 2)
+ 210:	80 91 04 01 	lds	r24, 0x0104	; 0x800104 <canal_actual>
+ 214:	82 30       	cpi	r24, 0x02	; 2
+ 216:	b9 f4       	brne	.+46     	; 0x246 <__vector_21+0x10a>
+		{
+			ADMUX = 0;
+ 218:	ec e7       	ldi	r30, 0x7C	; 124
+ 21a:	f0 e0       	ldi	r31, 0x00	; 0
+ 21c:	10 82       	st	Z, r1
+			ADMUX |= (1 << REFS0);     // Referencia = AVCC
+ 21e:	80 81       	ld	r24, Z
+ 220:	80 64       	ori	r24, 0x40	; 64
+ 222:	80 83       	st	Z, r24
+			ADMUX |= (1 << ADLAR);     // Ajuste a la izquierda (usamos ADCH)
+ 224:	80 81       	ld	r24, Z
+ 226:	80 62       	ori	r24, 0x20	; 32
+ 228:	80 83       	st	Z, r24
+			ADMUX = (ADMUX & 0xF0) | 0x02; // ADC2
+ 22a:	80 81       	ld	r24, Z
+ 22c:	80 7f       	andi	r24, 0xF0	; 240
+ 22e:	82 60       	ori	r24, 0x02	; 2
+ 230:	80 83       	st	Z, r24
+			canal_actual = 0;
+ 232:	10 92 04 01 	sts	0x0104, r1	; 0x800104 <canal_actual>
+			limitante = ADCH;
+ 236:	80 91 79 00 	lds	r24, 0x0079	; 0x800079 <__TEXT_REGION_LENGTH__+0x7f8079>
+ 23a:	80 93 02 01 	sts	0x0102, r24	; 0x800102 <__data_end>
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ 23e:	8a e6       	ldi	r24, 0x6A	; 106
+ 240:	8a 95       	dec	r24
+ 242:	f1 f7       	brne	.-4      	; 0x240 <__vector_21+0x104>
+ 244:	00 c0       	rjmp	.+0      	; 0x246 <__vector_21+0x10a>
+	//duty = contador_vol;
+	//updateDutyCycleA(duty);
+	//updateDutyCycleB(duty);
+	//_delay_us(10);
+	
+	ADCSRA |= (1 << ADSC); // Inicia nueva conversión
+ 246:	ea e7       	ldi	r30, 0x7A	; 122
+ 248:	f0 e0       	ldi	r31, 0x00	; 0
+ 24a:	80 81       	ld	r24, Z
+ 24c:	80 64       	ori	r24, 0x40	; 64
+ 24e:	80 83       	st	Z, r24
+
+}
+ 250:	ff 91       	pop	r31
+ 252:	ef 91       	pop	r30
+ 254:	bf 91       	pop	r27
+ 256:	af 91       	pop	r26
+ 258:	9f 91       	pop	r25
+ 25a:	8f 91       	pop	r24
+ 25c:	7f 91       	pop	r23
+ 25e:	6f 91       	pop	r22
+ 260:	5f 91       	pop	r21
+ 262:	4f 91       	pop	r20
+ 264:	3f 91       	pop	r19
+ 266:	2f 91       	pop	r18
+ 268:	0f 90       	pop	r0
+ 26a:	0f be       	out	0x3f, r0	; 63
+ 26c:	0f 90       	pop	r0
+ 26e:	1f 90       	pop	r1
+ 270:	18 95       	reti
+
+00000272 <__vector_16>:
+
+ISR(TIMER0_OVF_vect){
+ 272:	1f 92       	push	r1
+ 274:	0f 92       	push	r0
+ 276:	0f b6       	in	r0, 0x3f	; 63
+ 278:	0f 92       	push	r0
+ 27a:	11 24       	eor	r1, r1
+ 27c:	8f 93       	push	r24
+ 27e:	9f 93       	push	r25
+	contador_vol++;
+ 280:	80 91 03 01 	lds	r24, 0x0103	; 0x800103 <contador_vol>
+ 284:	8f 5f       	subi	r24, 0xFF	; 255
+ 286:	80 93 03 01 	sts	0x0103, r24	; 0x800103 <contador_vol>
+	
+	if (contador_vol<limitante){
+ 28a:	90 91 02 01 	lds	r25, 0x0102	; 0x800102 <__data_end>
+ 28e:	89 17       	cp	r24, r25
+ 290:	20 f4       	brcc	.+8      	; 0x29a <__vector_16+0x28>
+		PORTB |= (1<<PORTB0);
+ 292:	85 b1       	in	r24, 0x05	; 5
+ 294:	81 60       	ori	r24, 0x01	; 1
+ 296:	85 b9       	out	0x05, r24	; 5
+ 298:	03 c0       	rjmp	.+6      	; 0x2a0 <__vector_16+0x2e>
+	}
+	else
+	{
+		PORTB &= ~(1<<PORTB0);
+ 29a:	85 b1       	in	r24, 0x05	; 5
+ 29c:	8e 7f       	andi	r24, 0xFE	; 254
+ 29e:	85 b9       	out	0x05, r24	; 5
+	}
+ 2a0:	9f 91       	pop	r25
+ 2a2:	8f 91       	pop	r24
+ 2a4:	0f 90       	pop	r0
+ 2a6:	0f be       	out	0x3f, r0	; 63
+ 2a8:	0f 90       	pop	r0
+ 2aa:	1f 90       	pop	r1
+ 2ac:	18 95       	reti
+
+000002ae <initTimer0>:
+
+#include "MANUAL.h"
+
+void initTimer0(){
+	
+	DDRB |= (1 << DDB0);
+ 2ae:	84 b1       	in	r24, 0x04	; 4
+ 2b0:	81 60       	ori	r24, 0x01	; 1
+ 2b2:	84 b9       	out	0x04, r24	; 4
+	
+	TCCR0A= 0;
+ 2b4:	14 bc       	out	0x24, r1	; 36
+	TCCR0B= 0;
+ 2b6:	15 bc       	out	0x25, r1	; 37
+	TCCR0B |= (1<<CS00);
+ 2b8:	85 b5       	in	r24, 0x25	; 37
+ 2ba:	81 60       	ori	r24, 0x01	; 1
+ 2bc:	85 bd       	out	0x25, r24	; 37
+	TIMSK0 |= (1<<TOIE0);
+ 2be:	ee e6       	ldi	r30, 0x6E	; 110
+ 2c0:	f0 e0       	ldi	r31, 0x00	; 0
+ 2c2:	80 81       	ld	r24, Z
+ 2c4:	81 60       	ori	r24, 0x01	; 1
+ 2c6:	80 83       	st	Z, r24
+ 2c8:	08 95       	ret
+
+000002ca <initServoTimer12>:
+#include "SEV2.h"
+
+void initServoTimer12()
+{
+	// PB2 (OC1B) como salida
+	DDRB |= (1 << DDB2);
+ 2ca:	84 b1       	in	r24, 0x04	; 4
+ 2cc:	84 60       	ori	r24, 0x04	; 4
+ 2ce:	84 b9       	out	0x04, r24	; 4
+	
+	TCCR1A |= (1 << COM1B1);
+ 2d0:	e0 e8       	ldi	r30, 0x80	; 128
+ 2d2:	f0 e0       	ldi	r31, 0x00	; 0
+ 2d4:	80 81       	ld	r24, Z
+ 2d6:	80 62       	ori	r24, 0x20	; 32
+ 2d8:	80 83       	st	Z, r24
+ 2da:	08 95       	ret
+
+000002dc <updateServoPulse2>:
+}
+
+void updateServoPulse2(uint16_t pulso2)
+{
+	// pulse_width entre 1000 (1ms) y 2000 (2ms)
+	OCR1B = pulso2;
+ 2dc:	90 93 8b 00 	sts	0x008B, r25	; 0x80008b <__TEXT_REGION_LENGTH__+0x7f808b>
+ 2e0:	80 93 8a 00 	sts	0x008A, r24	; 0x80008a <__TEXT_REGION_LENGTH__+0x7f808a>
+ 2e4:	08 95       	ret
+
+000002e6 <__udivmodsi4>:
+ 2e6:	a1 e2       	ldi	r26, 0x21	; 33
+ 2e8:	1a 2e       	mov	r1, r26
+ 2ea:	aa 1b       	sub	r26, r26
+ 2ec:	bb 1b       	sub	r27, r27
+ 2ee:	fd 01       	movw	r30, r26
+ 2f0:	0d c0       	rjmp	.+26     	; 0x30c <__udivmodsi4_ep>
+
+000002f2 <__udivmodsi4_loop>:
+ 2f2:	aa 1f       	adc	r26, r26
+ 2f4:	bb 1f       	adc	r27, r27
+ 2f6:	ee 1f       	adc	r30, r30
+ 2f8:	ff 1f       	adc	r31, r31
+ 2fa:	a2 17       	cp	r26, r18
+ 2fc:	b3 07       	cpc	r27, r19
+ 2fe:	e4 07       	cpc	r30, r20
+ 300:	f5 07       	cpc	r31, r21
+ 302:	20 f0       	brcs	.+8      	; 0x30c <__udivmodsi4_ep>
+ 304:	a2 1b       	sub	r26, r18
+ 306:	b3 0b       	sbc	r27, r19
+ 308:	e4 0b       	sbc	r30, r20
+ 30a:	f5 0b       	sbc	r31, r21
+
+0000030c <__udivmodsi4_ep>:
+ 30c:	66 1f       	adc	r22, r22
+ 30e:	77 1f       	adc	r23, r23
+ 310:	88 1f       	adc	r24, r24
+ 312:	99 1f       	adc	r25, r25
+ 314:	1a 94       	dec	r1
+ 316:	69 f7       	brne	.-38     	; 0x2f2 <__udivmodsi4_loop>
+ 318:	60 95       	com	r22
+ 31a:	70 95       	com	r23
+ 31c:	80 95       	com	r24
+ 31e:	90 95       	com	r25
+ 320:	9b 01       	movw	r18, r22
+ 322:	ac 01       	movw	r20, r24
+ 324:	bd 01       	movw	r22, r26
+ 326:	cf 01       	movw	r24, r30
+ 328:	08 95       	ret
+
+0000032a <__umulhisi3>:
+ 32a:	a2 9f       	mul	r26, r18
+ 32c:	b0 01       	movw	r22, r0
+ 32e:	b3 9f       	mul	r27, r19
+ 330:	c0 01       	movw	r24, r0
+ 332:	a3 9f       	mul	r26, r19
+ 334:	70 0d       	add	r23, r0
+ 336:	81 1d       	adc	r24, r1
+ 338:	11 24       	eor	r1, r1
+ 33a:	91 1d       	adc	r25, r1
+ 33c:	b2 9f       	mul	r27, r18
+ 33e:	70 0d       	add	r23, r0
+ 340:	81 1d       	adc	r24, r1
+ 342:	11 24       	eor	r1, r1
+ 344:	91 1d       	adc	r25, r1
+ 346:	08 95       	ret
+
+00000348 <_exit>:
+ 348:	f8 94       	cli
+
+0000034a <__stop_program>:
+ 34a:	ff cf       	rjmp	.-2      	; 0x34a <__stop_program>
